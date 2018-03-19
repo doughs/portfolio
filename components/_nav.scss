@@ -1,0 +1,173 @@
+
+
+//PHONE VIEW
+@media only screen and (max-width : 599px) {
+	nav {
+		padding: 1em 1.5em 1em 1.5em;
+		width: 100%;
+		z-index: 10000000;
+		position: fixed;
+		background-color: $white;
+		.nav {
+			float: right;
+			overflow: hidden;
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				a{
+					text-decoration: none;
+					color: $text;
+				}	
+			}
+		}
+		#logo {
+			float: left;
+			li {display: block;}
+			a{
+				text-decoration: none;
+				color: $text;
+			}
+		}
+	}
+
+	button {display: none;}
+
+	.nav a:hover, a:hover, #logo:hover a {   
+		transition: .25s;
+		color: $orange;
+	}
+
+	//DROP DOWN
+	.dropdown {
+	    float: left;
+	    overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	    cursor: pointer;
+	    border: none;
+	    outline: none;
+	    color: $text;
+		font-size: 16px;
+		font-family: 'Karla', sans-serif;
+	    background-color: inherit;
+	}
+
+	.dropbtn:hover {
+		text-decoration: underline;
+		transition: .25s;
+		color: $orange;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: $white;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    float: none;
+	    color: $text;
+	    padding: 12px 0 16px 0;
+	    text-decoration: none;
+	    display: block;
+	    font-size: 14px;
+	    text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	    background-color: $white;
+	}
+
+	.show {
+	    display: block;
+	    padding: 0 1em 0 1em;
+	}
+}
+	
+
+@media only screen and (min-width : 600px) {
+	nav {
+		padding: 1em 1.5em 1em 1.5em;
+		width: 100%;
+		z-index: 10000000;
+		position: fixed;
+		background-color: $white;
+		.nav {
+			float: right;
+			overflow: hidden;
+			li {
+				display: inline-block;
+				margin-left: 20px;
+				a{
+					text-decoration: none;
+					color: $text;
+				}	
+			}
+		}
+		#logo {
+			float: left;
+			li {display: block;}
+			a{
+				text-decoration: none;
+				color: $text;
+			}
+		}
+	}
+
+	.nav a:hover, a:hover, #logo:hover a {   
+		transition: .25s;
+		color: $orange;
+	}
+
+	//DROP DOWN
+	.dropdown {
+	    float: left;
+	    overflow: hidden;
+	}
+
+	.dropdown .dropbtn {
+	    cursor: pointer;
+	    border: none;
+	    outline: none;
+	    color: $text;
+		font-size: 16px;
+		font-family: 'Karla', sans-serif;
+	    background-color: inherit;
+	}
+
+	.dropbtn:hover {
+		text-decoration: underline;
+		transition: .25s;
+		color: $orange;
+	}
+
+	.dropdown-content {
+	    display: none;
+	    position: absolute;
+	    background-color: $white;
+	    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	    z-index: 1;
+	}
+
+	.dropdown-content a {
+	    float: none;
+	    color: $text;
+	    padding: 12px 0 16px 0;
+	    text-decoration: none;
+	    display: block;
+	    font-size: 14px;
+	    text-align: left;
+	}
+
+	.dropdown-content a:hover {
+	    background-color: $white;
+	}
+
+	.show {
+	    display: block;
+	    padding: 0 1em 0 1em;
+	}
+}

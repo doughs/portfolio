@@ -1,0 +1,90 @@
+
+//global reset + box-sizing rule
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    }
+
+//wrapper
+.grid {
+    width: 100%;
+    margin: 0 auto;
+}
+
+//ROWS
+.grid:after,
+.row:after {
+      content: "";
+      display: table;
+      clear: both; 
+      }
+
+//COLUMNS
+[class*='column-'] {
+    float: left;
+    padding: 1.5em; //forms gutter and some vertical space
+    width: 100%;
+    min-height: 1px; //makes sure that the column displays properly, even if it has no content
+    }
+
+//DESKTOP VIEW
+@media only screen  and (min-width : 1224px) {
+	.wrapper {
+        width: 95%;
+        max-width: 65em; 
+        }
+         
+    .column-1 {
+        width: 8.33333%; 
+        }
+         
+    .column-2 {
+        width: 16.66667%; 
+        }
+         
+    .column-3 {
+        width: 25%; 
+        }
+         
+    .column-4 {
+        width: 33.33333%; 
+        }
+         
+    .column-5 {
+        width: 41.66667%; 
+        }
+         
+    .column-6 {
+        width: 50%; 
+        }
+         
+    .column-7 {
+        width: 58.33333%; 
+        }
+         
+    .column-8 {
+        width: 66.66667%; 
+        }
+         
+    .column-9 {
+        width: 75%; 
+        }
+         
+    .column-10 {
+        width: 83.33333%; 
+        }
+         
+    .column-11 {
+        width: 91.66667%; 
+        }
+         
+    .column-12 {
+        width: 100%; 
+        } 
+     
+}

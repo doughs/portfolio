@@ -1,0 +1,376 @@
+//base css for project pages
+//SOCIAL MEDIA ICONS
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css);
+
+html{
+	background-color: $white;
+	max-height: 100%;
+}
+
+body {
+	position: relative;
+	height: 100%;
+	margin: 0;  
+} 
+
+p {
+	text-align: left;
+	line-height: 2;
+	a {text-decoration: none;}
+}
+
+a:visited {color: $text;}
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto !important; 
+}
+
+video {
+	width: 100%;
+	margin: 0;
+}
+
+//PHONE VIEW
+@media only screen and (max-width : 599px) {
+	
+	#abstract {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	background-color: $off-w;
+	.intro {
+		width: auto;
+		padding: 1em;
+		margin: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		position: absolute;
+		h1{
+			text-align: left;
+			line-height: 1.2; 
+			font-size: 2em;
+			color: $text;
+			transition-timing-function: ease-out;
+			transition: 1s;
+			}
+		}
+	}
+
+	#info {
+	width: 100%;
+	margin-top: -3px;
+	position: relative;
+	background-color: $orange;
+	color: $white;
+	}
+
+	.wrap {
+		padding: 1em;
+		width: 100%;
+		position: relative;
+		p {
+			padding: 0;
+		}
+	}
+}
+
+// #project_header {
+// 	width: 100%;
+// 	position: relative;
+// 	overflow: hidden;
+// 	#p_box {
+// 	 	position: absolute;
+// 	 	margin: 0;
+// 	 	top: 50%;
+// 	 	left: 50%;
+// 	 	transform: translateY(-50%) translateX(-50%);
+// 		display: block;
+// 		font-size: 1.5em;
+// 		color: $orange;
+//  	}
+// }
+
+//TABLET VIEW
+@media only screen and (min-width : 600px){
+	#abstract {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		background-color: $off-w;
+		.intro {
+			padding: 2em;
+			margin: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			h1{
+				text-align: left;
+				line-height: 1.2; 
+				font-size: 3.5em;
+				color: $text;
+				transition-timing-function: ease-out;
+				transition: 1s;
+			}
+		}
+	}
+
+	#info {
+	width: 100%;
+	margin-top: -3px;
+	position: relative;
+	background-color: $orange;
+	color: $white;
+	}
+
+	.wrap {
+		padding: 2em;
+		width: 100%;
+		position: relative;
+		p {
+			padding: 0;
+		}
+	}
+}
+
+//DESKTOP VIEW
+@media only screen  and (min-width : 1200px) {
+	#abstract {
+		width: 100%;
+		height: 100vh;
+		position: relative;
+		background-color: $off-w;
+		.intro {
+			padding: 4em;
+			margin: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			position: absolute;
+			h1{
+				text-align: left;
+				line-height: 1.2; 
+				font-size: 4.5em;
+				color: $white;
+				transition-timing-function: ease-out;
+				transition: 1s;
+			}
+		}
+	}
+
+	#info {
+	width: 100%;
+	margin-top: -3px;
+	position: relative;
+	background-color: $orange;
+	color: $white;
+	}
+
+	.wrap {
+		padding: 2em;
+		width: 100%;
+		position: relative;
+		p {
+			padding: 4em 6em 4em 6em;
+			font-size: 1.5em;
+		}
+	}
+	#abstract:hover h1 {
+		transition-timing-function: ease-in;
+		transition: 1s;
+		color: $text; 
+	}
+}
+
+span {color: $orange;}
+
+
+.work {
+	margin: 0 0 0 0;
+	max-width: 100%;
+	position: relative;
+	h2 {text-align: center;}
+	.mocks {
+		width: auto;
+		height: 100%;
+		margin: 5%;
+	}
+}
+
+//scroll animation [start]
+.scroll a {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  z-index: 2;
+  display: inline-block;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  color: $orange;
+  font-family: $font-body;
+  text-decoration: none;
+  transition: opacity .3s;
+}
+
+.scroll a:hover {
+  opacity: .5;
+}
+
+#scroll-arrow a {
+  padding-top: 40px;
+}
+
+#scroll-arrow a span {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20px;
+  height: 35px;
+  margin-left: -10px;
+  border: 1px solid $orange;
+  border-radius: 50px;
+  box-sizing: border-box;
+}
+
+#scroll-arrow a span::before {
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  content: '';
+  width: 6px;
+  height: 6px;
+  margin-left: -3px;
+  background-color: $orange;
+  border-radius: 100%;
+  -webkit-animation: sdb10 2s infinite;
+  animation: sdb10 2s infinite;
+  box-sizing: border-box;
+}
+
+@-webkit-keyframes sdb10 {
+  0% {
+    -webkit-transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    -webkit-transform: translate(0, 10px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes sdb10 {
+  0% {
+    transform: translate(0, 0);
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    transform: translate(0, 10px);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+//scroll animation [end]
+
+// next or last project links [START]
+.links {
+	width: 100%;
+}
+
+#link {
+	position: relative;
+	width: 100%;
+	height: 100px;
+	background-color: $white;
+	text-align: center;
+	text-decoration: none;
+	transition-timing-function: ease-out;
+	transition: .2s;
+	a {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		color: $orange;}
+}
+
+#left_link {
+	position: relative;
+	height: 100px;
+	background-color: $white;
+	text-align: center;
+	text-decoration: none;
+	transition-timing-function: ease-out;
+	transition: .2s;
+	a {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		color: $orange;}
+}
+
+#right_link {		
+	height: 100px;
+	position: relative;
+	background-color: $white;
+	text-align: center;
+	text-decoration: none;
+	transition-timing-function: ease-out;
+	transition: .2s;
+	a {
+		position: absolute;
+		margin: 0;
+		top: 50%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+		color: $orange;}
+}  
+
+#link:hover {
+	transition: .5s;
+	background-color: $text;
+	a {color: $white;}
+}
+
+#left_link:hover {
+	transition: .5s;
+	background-color: $text;
+	a {color: $white;}
+}
+
+#right_link:hover {
+	transition: .5s;
+	background-color: $text;
+	a {color: $white;}
+}
+// next or last project links [END]
+
+
+footer {
+	width: 100%;
+	height: 20%;
+	bottom: 0;
+	text-align: center;
+	#footer {
+		margin: 0 0 1em 0;
+	li {display: inline;}
+	.footer-social-icons {
+		padding-top: 1em;
+		}
+	}
+}
+
+

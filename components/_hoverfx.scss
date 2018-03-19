@@ -1,0 +1,31 @@
+.box {
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+}
+
+.hover {
+	position: absolute;
+	top: 0;
+	left: -100%;
+	width: 50%;
+	height: 100%;
+	padding-left: 1em;
+	background-color: $white;
+	transition: .5s;
+}
+
+.hover h3 {
+	padding: 0;
+	margin-left: 0;
+	top: 50%;	
+	transform: translateY(-50%);
+	position: absolute;
+	text-align: left;
+	color: $orange;
+}
+
+.box:hover .hover {
+	left: 0;
+}
+
